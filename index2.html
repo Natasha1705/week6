@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr minmax(400px, 1fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 10%;
+}
+
+.header {
+  grid-row: 1 / 2;
+  grid-column: 1 / 4;
+  background-color: rgb(146, 138, 138);
+  padding: 10px 20px;
+  align-items: start;
+}
+
+.middle{
+  display: grid;
+
+
+} 
+
+.main{
+  grid-row: 1 / 3;
+  grid-column: 1 / 3;
+  background-color: rgb(240, 219, 178);
+
+
+}
+
+.main p{
+  border: 1px;
+  display: inline-grid;
+  background-color: rgb(228, 180, 82);
+  grid-row: 1fr;
+  grid-column: 1fr;
+  width: 300px;
+  height: 50px;
+  padding: 10px 20px;
+}
+
+.sidebar {
+  grid: row 1fr;
+  grid-column: 3/4;
+  height: 500px;
+  background-color: rgb(157, 241, 209);
+  justify-items: start;
+}
+
+.footer {
+  grid-row: 4 / 5;
+  grid-column: 1 / 4;
+  background-color: rgb(146, 138, 138);
+  padding: 10px 20px;
+  align-items: end;
+}
+
+.footer p{
+  display: inline-grid;
+  border: 1px;
+  background-color: rgb(184, 176, 176);
+  grid-row: 1fr;
+  grid-column: 1fr;
+  width: 100px;
+  height: 50px;
+  padding: 10px 20px;
+  align-content: space-between;
+  justify-self: center;
+}
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+        <header class="header">
+            <h2>Шапка страницы</h2>
+        </header>
+        <main>
+            <div class="middle">
+                <div class="main">
+                    <h2>Основная часть</h2>
+                    <div class="small"></div>
+                    <p>Ещё 1</p>
+                    <p>Ещё 2</p>
+                    <p>Ещё 3</p>
+                </div>
+                <aside class="sidebar ">
+                    <h2>Боковая часть</h2>
+                </aside>
+            </div>
+        <footer class="footer">
+            <p>Секция футера 1</p>
+            <p>Секция футера 2</p>
+            <p>Секция футера 3</p>
+            <p>Секция футера 4</p>
+        </footer>
+</body>
+</html>
