@@ -62,6 +62,14 @@
     text-align: center;
     }
     
+    #icon{
+        position:relative;
+        width: 73px;
+        height: 58px;
+        top: -510px;
+        left: 12%;
+    }
+
     h1{
     position:relative;
     top: -150px;
